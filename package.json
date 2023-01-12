@@ -6,9 +6,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "eslint-config-react-app": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -16,7 +18,7 @@
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:css": "postcss src/styles/index.css -o src/styles/main.css"
+    "build:css": "postcss src/index.css -o src/index.min.css"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +40,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.2.4"
+    "postcss-cli": "^10.1.0"
   }
 }
