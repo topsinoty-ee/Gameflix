@@ -5,32 +5,42 @@ import React from 'react'
 const Movielist = (props) => {
   let array = props.array
 
-  return array.map((card) => {
-    //Card
-    return (
-      <div className="grid grid-rows-[2fr,1fr] border-2 border-black rounded-lg bg-white">
-        <div className="flex place-content-center items-center content-center">
-          <img src={card.src} alt={card.title} className="object-cover" />
-        </div>
+  const Card = () => {
+    return array.map((card) => {
+      return (
+        <div className="grid grid-cols-[2fr,1fr] border-2 border-black rounded-lg bg-white w-[150px] h-[12.5rem]">
+          <div className="flex place-content-center items-center content-center w-full">
+            <img src={card.src} alt={card.title} className="object-cover" />
+          </div>
 
-        <div className="mx-auto">
-          <h3 className="text-xl">{card.title}</h3>
-          {/* taglist */}
-          <ul className="flex flex-row flex-nowrap first:after:content-['&bull;'] last:before:content-['&bull;']">
-            {card.tags.map((selected) => {
-              const keyVal = `${card.title}-tag${selected.id}`
+          <div className="mx-auto w-full">
+            <h3 className="text-xl">{card.title}</h3>
+            {/* taglist */}
+            <ul className="flex flex-row flex-nowrap first:after:content-['&bull;'] last:before:content-['&bull;'] w-full">
+              {card.tags.map((selected) => {
+                const keyVal = `${card.title}-tag${selected.id}`
 
-              return (
-                <li key={keyVal} className="px-1 hover:underline hover:text-blue-800 transition-all duration-300">
-                  {selected.tag}
-                </li>
-              )
-            })}
-          </ul>
+                return (
+                  <li
+                    key={keyVal}
+                    className="px-1 hover:underline hover:text-blue-800 transition-all duration-300"
+                  >
+                    {selected.tag}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
-    )
-  })
+      )
+    })
+  }
+
+  return (
+    <div className="grid grid-rows-4 mx-auto" id="list">
+      <Card />
+    </div>
+  )
 }
 
 export default Movielist
