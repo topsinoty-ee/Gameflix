@@ -8,7 +8,7 @@ const Movielist = (props) => {
   const Card = () => {
     return array.map((card) => {
       return (
-        <div className="grid grid-cols-[2fr,1fr] border-2 border-black rounded-lg bg-white w-[150px] h-[12.5rem]">
+        <div className="grid grid-rows-[2fr,1fr] border-2 border-black rounded-lg bg-white w-[150px] h-[12.5rem]">
           <div className="flex place-content-center items-center content-center w-full">
             <img src={card.src} alt={card.title} className="object-cover" />
           </div>
