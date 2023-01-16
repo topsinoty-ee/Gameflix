@@ -19,7 +19,6 @@ const Movielist = (props) => {
             <ul className="flex flex-row flex-nowrap first:after:content-['&bull;'] last:before:content-['&bull;'] w-full">
               {card.tags.map((selected) => {
                 const keyVal = `${card.title}-tag${selected.id}`
-
                 return (
                   <li
                     key={keyVal}
