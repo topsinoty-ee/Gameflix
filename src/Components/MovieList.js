@@ -8,21 +8,21 @@ const Movielist = (props) => {
   const Card = () => {
     return array.map((card) => {
       return (
-        <div className="card grid grid-rows-[2fr,1fr] border-2 border-black rounded-lg bg-white w-[150px] h-[12.5rem] ">
-          <div className="flex place-content-center items-center content-center w-full">
-            <img src={card.src} alt={card.title} className="object-cover" />
+        // DO NOT CHANGE OR MODIFY 'card'. IT IS AN ESSENTIAL HOOK FOR THE FILTER
+        <div className="card">
+          <div >
+            <img src={card.src} alt={card.title} />
           </div>
 
-          <div className="mx-auto w-full">
-            <h3 className="text-xl">{card.title}</h3>
+          <div>
+            <h3>{card.title}</h3>
             {/* taglist */}
-            <ul className="flex flex-row flex-nowrap first:after:content-['&bull;'] last:before:content-['&bull;'] w-full">
+            <ul>
               {card.tags.map((selected) => {
                 const keyVal = `${card.title}-tag${selected.id}`
                 return (
                   <li
                     key={keyVal}
-                    className="px-1 hover:underline hover:text-blue-800 transition-all duration-300"
                   >
                     {selected.tag}
                   </li>

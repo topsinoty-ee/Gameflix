@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="bg-gray-100 h-screen flex items-center justify-center">
+      <div>
         <Movielist array={Array} />
       </div>
     </div>
