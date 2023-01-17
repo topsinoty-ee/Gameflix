@@ -1,5 +1,6 @@
 import React from 'react'
 import array from './Data_Array'
+import {ReactComponent as Logo} from '../Assets/Logo-text.svg'
 
 const Navbar = () => {
   function Search() {
@@ -39,7 +40,8 @@ const Navbar = () => {
     )
   }
   return (
-    <div>
+    <header className='h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2'>
+    <Logo/>
       <input
         placeholder="Search for movies..."
         type="text"
@@ -47,9 +49,10 @@ const Navbar = () => {
         list="Movielist"
         id="input"
         onKeyDown={Search}
+        className="p-2 rounded-md"
       />
       <DataList />
-    </div>
+    </header>
   )
 }
 export default Navbar
