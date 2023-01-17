@@ -10,13 +10,13 @@ const GameList = (props) => {
 
       return (
         // DO NOT CHANGE OR MODIFY 'card'. IT IS AN ESSENTIAL HOOK FOR THE FILTER
-        <div className="card flex flex-col shadow-black shadow-sm rounded-sm">
+        <div className="card flex flex-col shadow-black shadow-sm rounded-sm hover:shadow-black hover:shadow-md hover:transition hover:cursor-pointer select-none max-h-[420px]">
           <div>
             <img src={card.src} alt={card.title} className=''/>
           </div>
 
-          <div className='p-3 flex flex-grow flex-col place-content-between content-between justify-between'>
-            <h3 className='text-xl font-bold'>{card.title}</h3>
+          <div className='p-3 flex flex-grow flex-col place-content-between content-between justify-between gap-3'>
+            <h3 className='text-xl font-bold select-auto'>{card.title}</h3>
             {/* taglist */}
             <ul className='flex space-x-1'>
               {card.tags.map((selected) => {
