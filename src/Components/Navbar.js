@@ -26,6 +26,7 @@ const Navbar = () => {
     let index = 0
     for (index; index < array.length; index++) {
       const card = array[index].title
+      // eslint-disable-next-line no-unused-vars
       const push = DATALIST.push(card)
     }
 
