@@ -30,7 +30,7 @@ const Navbar = () => {
       // eslint-disable-next-line no-unused-vars
       const push = DATALIST.push(card)
     }
-
+    DATALIST.sort()
     return (
       <datalist id="Gamelist">
         {DATALIST.map((item) => (

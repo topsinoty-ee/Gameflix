@@ -1,7 +1,7 @@
 const array = [
   {
     src:
-      'https://www.mobygames.com/images/covers/l/654577-minecraft-nintendo-switch-front-cover.jpg',
+      'https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png',
     title: 'Minecraft',
     tags: [
       { tag: 'survival', id: 1 },
@@ -11,12 +11,12 @@ const array = [
   },
   {
     src:
-      'https://hips.hearstapps.com/digitalspyuk.cdnds.net/13/14/gaming-gta5-cover.jpeg?resize=480:*',
+      'https://assets-prd.ignimgs.com/2021/12/17/gta-5-button-2021-1639777058682.jpg',
     title: 'Grand Theft Auto V',
     tags: [
       { tag: 'sandbox', id: 1 },
       { tag: 'adventure', id: 2 },
-      { tag: 'third-person shooter', id: 3 },
+      { tag: 'TPS', id: 3 },
     ],
   },
   {
@@ -36,7 +36,7 @@ const array = [
     tags: [
       { tag: 'survival', id: 1 },
       { tag: 'tactical shooter', id: 2 },
-      { tag: 'first-person shooter', id: 3 },
+      { tag: 'FPS', id: 3 },
     ],
   },
   {
@@ -44,28 +44,28 @@ const array = [
       'https://www.mobygames.com/images/covers/l/497224-super-mario-64-wii-u-front-cover.jpg',
     title: 'Super Mario 64',
     tags: [
-      { tag: 'platform game', id: 1 },
+      { tag: 'platform', id: 1 },
       { tag: 'adventure', id: 2 },
-      { tag: 'fighting game', id: 3 },
+      { tag: 'fighting', id: 3 },
     ],
   },
   {
     src:
-      'https://www.mobygames.com/images/covers/l/253219-pac-man-nes-front-cover.png',
-    title: 'Pac-man',
+      'https://sonicthehedgehog.com/wp-content/uploads/2022/05/Sonic_DashPlus.jpg',
+    title: 'Sonic Dash +',
     tags: [
-      { tag: 'maze video game', id: 1 },
+      { tag: 'maze', id: 1 },
       { tag: 'action', id: 2 },
       { tag: 'multiplayer', id: 3 },
     ],
   },
   {
-    src: 'https://wallpapercave.com/wp/wp4460363.jpg',
+    src: 'https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg',
     title: 'PUBG',
     tags: [
-      { tag: 'battle royal', id: 1 },
+      { tag: 'battle royale', id: 1 },
       { tag: 'action-adventure', id: 2 },
-      { tag: 'shooter video game', id: 3 },
+      { tag: 'shooter', id: 3 },
     ],
   },
   {
@@ -73,14 +73,14 @@ const array = [
       'https://www.mobygames.com/images/covers/l/487051-fortnite-battle-royale-nintendo-switch-front-cover.jpg',
     title: 'Fortnite',
     tags: [
-      { tag: 'battle royal', id: 1 },
+      { tag: 'battle royale', id: 1 },
       { tag: 'survival', id: 2 },
       { tag: 'action', id: 3 },
     ],
   },
   {
     src:
-      'https://www.rocketchainsaw.com.au/wp-content/uploads/2018/05/Red-Dead-Redemption-2-New-Logo.jpg',
+      'https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png',
     title: 'Red Dead Redemption 2',
     tags: [
       { tag: 'western', id: 1 },
@@ -90,7 +90,7 @@ const array = [
   },
   {
     src:
-      'https://www.giantbomb.com/a/uploads/scale_medium/8/87790/2956731-box_roblox.png',
+      'https://images.rbxcdn.com/cece570e37aa8f95a450ab0484a18d91',
     title: 'Roblox',
     tags: [
       { tag: 'sandbox', id: 1 },
@@ -100,22 +100,22 @@ const array = [
   },
   {
     src:
-      'https://www.mobygames.com/images/covers/l/676458-fall-guys-ultimate-knockout-windows-front-cover.png',
+      'https://image.api.playstation.com/vulcan/ap/rnd/202211/1512/fcQBW9igeauBKr0QZUSPXmyX.png',
     title: 'Fall Guys',
     tags: [
       { tag: 'battle royale', id: 1 },
       { tag: 'simulation', id: 2 },
-      { tag: 'platform game', id: 3 },
+      { tag: 'platform', id: 3 },
     ],
   },
   {
     src:
-      'https://www.mobygames.com/images/covers/l/441545-rocket-league-xbox-one-front-cover.jpg',
+      'https://image.api.playstation.com/vulcan/ap/rnd/202211/1900/WwXQmYTM3fvSRSvVzVbrnmdD.png',
     title: 'Rocket League',
     tags: [
-      { tag: 'vehicle simulation', id: 1 },
+      { tag: 'simulation', id: 1 },
       { tag: 'action', id: 2 },
-      { tag: 'car racing game', id: 3 },
+      { tag: 'racing', id: 3 },
     ],
   },
 ]
