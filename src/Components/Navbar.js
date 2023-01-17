@@ -2,26 +2,23 @@ import React from 'react'
 import array from './Data_Array'
 
 const Navbar = () => {
-    function Search() {
-        var input, filter, list, card, title, i, txtValue;
-        input = document.getElementById("input");
-        filter = input.value.toUpperCase();
-        list = document.getElementById("list");
-        card = list.getElementsByClassName("card");
+  function Search() {
+    var input, filter, list, card, title, i, txtValue
+    input = document.getElementById('input')
+    filter = input.value.toUpperCase()
+    list = document.getElementById('list')
+    card = list.getElementsByClassName('card')
 
-        for (i = 0; i < card.length; i++) {
-            title = card[i].getElementsByTagName("h3")[0];
-            txtValue = title.textContent || title.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                card[i].style.display = "";
-            } else {
-                card[i].style.display = "none";
-            }
-        }
-        
+    for (i = 0; i < card.length; i++) {
+      title = card[i].getElementsByTagName('h3')[0]
+      txtValue = title.textContent || title.innerText
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        card[i].style.display = ''
+      } else {
+        card[i].style.display = 'none'
+      }
     }
-
-
+  }
 
   const DataList = () => {
     const DATALIST = []
