@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
       <datalist id="Movielist">
         {DATALIST.map((item) => (
-          <option>{item}</option>
+          <option key={item}>{item}</option>
         ))}
       </datalist>
     )

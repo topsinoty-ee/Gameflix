@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar'
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col h-[100vh] bg-metal '>
       <Navbar />
       <div>
         <Movielist array={Array} />

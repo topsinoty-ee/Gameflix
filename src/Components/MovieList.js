@@ -10,7 +10,7 @@ const Movielist = (props) => {
       return (
         // DO NOT CHANGE OR MODIFY 'card'. IT IS AN ESSENTIAL HOOK FOR THE FILTER
         <div className="card">
-          <div >
+          <div>
             <img src={card.src} alt={card.title} />
           </div>
 
