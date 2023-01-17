@@ -1,21 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './public/index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
+    './scr/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
     colors: {
       blue: '#1fb6ff',
-      purple: '#8485D5',
       pink: '#ff49db',
       orange: '#ff7849',
       green: '#13ce66',
@@ -23,86 +18,30 @@ module.exports = {
       'gray-dark': '#273444',
       gray: '#8492a6',
       'gray-light': '#d3dce6',
-      'warning-red': '#FF3131',
-      'ring-orange': '#FF7849',
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: '#ffffff',
+      purple: '#3f3cbb',
+      midnight: '#121063',
+      metal: '#565584',
+      tahiti: '#3ab7bf',
+      silver: '#ecebff',
+      'bubble-gum': '#ff77e9',
+      bermuda: '#78dcca',
+      black: colors.black,
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    maxHeight: {
-      '10vh': '10vh',
-      '1/2': '50%',
-    },
-    minHeight: {
-      '90vh': '90vh',
-      full: '100vh',
-    },
-    maxWidth: {
-      '10vh': '10vh',
-      '1/2': '50%',
-    },
-    minWidth: {
-      '90vh': '90vh',
-      full: '100vh',
-    },
-
-    spacing: {
-      px: '1px',
-      0: '0',
-      0.5: '0.125rem',
-      1: '0.25rem',
-      1.5: '0.375rem',
-      2: '0.5rem',
-      2.5: '0.625rem',
-      3: '0.75rem',
-      3.5: '0.875rem',
-      4: '1rem',
-      5: '1.25rem',
-      6: '1.5rem',
-      7: '1.75rem',
-      8: '2rem',
-      9: '2.25rem',
-      10: '2.5rem',
-      11: '2.75rem',
-      12: '3rem',
-      14: '3.5rem',
-      16: '4rem',
-      20: '5rem',
-      24: '6rem',
-      28: '7rem',
-      32: '8rem',
-      36: '9rem',
-      40: '10rem',
-      44: '11rem',
-      48: '12rem',
-      52: '13rem',
-      56: '14rem',
-      60: '15rem',
-      64: '16rem',
-      72: '18rem',
-      80: '20rem',
-      96: '24rem',
-    },
     extend: {
       spacing: {
-        '128': '32rem',
-        '144': '36rem',
+        '8xl': '96rem',
+        '9xl': '128rem',
       },
       borderRadius: {
         '4xl': '2rem',
       },
-      fontFamily: {
-        sans: ['Exo', 'sans-serif'],
-      },
-      fontSize: {
-        header: '4rem',
-      },
-      backgroundImage: {
-        'hero-pattern': "url('../src/Assets/bg-pic.svg')",
-        'footer-texture': "url('../src/Assets/footer-bg-pic.svg')",
-      },
-      
     },
   },
   plugins: [],
