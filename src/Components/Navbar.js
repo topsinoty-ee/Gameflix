@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
     return (
-      <datalist id="Movielist">
+      <datalist id="Gamelist">
         {DATALIST.map((item) => (
           <option key={item}>{item}</option>
         ))}
@@ -43,10 +43,10 @@ const Navbar = () => {
     <header className='h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2'>
     <Logo/>
       <input
-        placeholder="Search for movies..."
+        placeholder="Search for games..."
         type="text"
         autoComplete="on"
-        list="Movielist"
+        list="Gamelist"
         id="input"
         onKeyDown={Search}
         className="p-2 rounded-md"

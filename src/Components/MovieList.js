@@ -1,8 +1,8 @@
 import React from 'react'
 
-//Make a function MovieList() that maps through the movie database array from @MJOMA09 and makes a card that is rendered into the DOM
+//Make a function GameList() that maps through the game database array from @MJOMA09 and makes a card that is rendered into the DOM
 
-const Movielist = (props) => {
+const GameList = (props) => {
   let array = props.array
 
   const Card = () => {
@@ -11,7 +11,7 @@ const Movielist = (props) => {
         // DO NOT CHANGE OR MODIFY 'card'. IT IS AN ESSENTIAL HOOK FOR THE FILTER
         <div className="card">
           <div>
-            <img src={card.src} alt={card.title} />
+            <img src={card.src} alt={card.title} className=''/>
           </div>
 
           <div>
@@ -36,10 +36,10 @@ const Movielist = (props) => {
   }
 
   return (
-    <div className="grid grid-rows-4 mx-auto" id="list">
+    <div className="grid grid-cols-4 mx-0 overflow-scroll" id="list">
       <Card />
     </div>
   )
 }
 
-export default Movielist
+export default GameList
