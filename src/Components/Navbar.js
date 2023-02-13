@@ -21,24 +21,6 @@ const Navbar = () => {
     }
   }
 
-  const DataList = () => {
-    const DATALIST = []
-
-    let index = 0
-    for (index; index < array.length; index++) {
-      const card = array[index].title
-      // eslint-disable-next-line no-unused-vars
-      const push = DATALIST.push(card)
-    }
-    DATALIST.sort()
-    return (
-      <datalist id="Gamelist">
-        {DATALIST.map((item) => (
-          <option key={item}>{item}</option>
-        ))}
-      </datalist>
-    )
-  }
   return (
     <header className='h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2'>
     <Logo/>
@@ -51,7 +33,6 @@ const Navbar = () => {
         onKeyDown={Search}
         className="p-2 rounded-md"
       />
-      <DataList />
     </header>
   )
 }
