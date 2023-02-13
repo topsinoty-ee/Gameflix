@@ -1,7 +1,7 @@
 import React from "react"
 
 const Card = (props) => {
-    let array = props.array
+    let array = props.src
     return array.map((card) => {
 
       return (
