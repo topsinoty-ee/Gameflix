@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react"
 
-//Make a function GameList() that maps through the game database array from @MJOMA09 and makes a card that is rendered into the DOM
-
-const GameList = (props) => {
-  let array = props.array
-
-  const Card = () => {
+const Card = (props) => {
+    let array = props.array
     return array.map((card) => {
 
       return (
@@ -36,12 +32,4 @@ const GameList = (props) => {
       )
     })
   }
-
-  return (
-    <div className="grid grid-cols-4 p-px gap-3  overflow-scroll" id="list">
-      <Card />
-    </div>
-  )
-}
-
-export default GameList
+  export default Card
