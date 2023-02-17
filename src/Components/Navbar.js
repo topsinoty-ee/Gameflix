@@ -1,46 +1,20 @@
-import React from 'react'
-import Logo from '../Assets/Logo-text.svg'
+import { ReactComponent as Logo } from '../Assets/Logo-text.svg'
 
-class Navbar extends React.Component() {
-  constructor(props){
-    super(props)
-  }
-  Search(x) {
-    let input = x.value
-    let filter = input.toUpperCase()
-    let card = document.querySelectorAll('.card')
-    let title
-
-    for (let i = 0; i < card.length; i++) {
-      let selected = i
-      title = card[selected].getElementsByTagName('h3')
-      if (
-        title.innerText.toUpperCase().indexOf(filter) > -1 ||
-        title.textContent.toUpperCase().indexOf(filter) > -1
-      ) {
-        card[selected].style.display = ''
-      } else {
-        card[selected].style.display = 'none'
-      }
-    }
-  }
-
-  render() {
-    return (
-      <header className="h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2">
-        <img src={Logo} alt="logo"/>
+const Navbar = ({ value, search , onSearch}) => {
+  return (
+    <header className="h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2">
+      <Logo />
+      <div className="flex ">
         <input
-          placeholder="Search for games..."
           type="text"
-          autoComplete="on"
-          list="Gamelist"
-          id="input"
-          onKeyDown={this.Search(this)}
-          className="p-2 rounded-md"
+          placeholder="Search for games..."
+          value={value}
+          onChange={search}
+          className="p-2 rounded-l-md"
         />
-      </header>
-    )
-  }
+        <span className='p-2 w-10 h-10 cursor-pointer border-black border bg-white bg-contain block rounded-r-md bg-search' onClick={onSearch}></span>
+      </div>
+    </header>
+  )
 }
-
 export default Navbar
