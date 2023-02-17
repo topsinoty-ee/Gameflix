@@ -10,7 +10,7 @@ const Navbar = ({ value, search , onSearch}) => {
           placeholder="Search for games..."
           value={value}
           onChange={search}
-          className="p-2 rounded-l-md"
+          className="p-2 rounded-md"
         />
 
       </div>
