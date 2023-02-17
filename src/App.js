@@ -14,16 +14,13 @@ function App() {
     card.title.toLowerCase().includes(searchTerm.toLowerCase()),
   )
 
-  const handleSearchSubmit = () => {
-    console.log('Search for:', searchTerm);
-  };
+
 
   return (
     <div className="">
       <Navbar
         search={handleSearch}
         value={searchTerm}
-        onSearch={handleSearchSubmit}
       />
       <div className="">
         {filteredCards.map((card, index) => (

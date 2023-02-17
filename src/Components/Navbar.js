@@ -12,7 +12,7 @@ const Navbar = ({ value, search , onSearch}) => {
           onChange={search}
           className="p-2 rounded-l-md"
         />
-        <span className='p-2 w-10 h-10 cursor-pointer border-black border bg-white bg-contain block rounded-r-md bg-search' onClick={onSearch}></span>
+
       </div>
     </header>
   )
