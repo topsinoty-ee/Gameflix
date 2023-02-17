@@ -19,28 +19,28 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col max-h-[100vh] bg-metal overflow-hidden m-0">
+    <div className="">
       <Navbar
         search={handleSearch}
         value={searchTerm}
         onSearch={handleSearchSubmit}
       />
-      <div className="flex h-[85vh] rounded-xl  m-5">
+      <div className="">
         {filteredCards.map((card, index) => (
-          <div key={index} className="card flex flex-col shadow-black shadow-sm rounded-sm hover:shadow-black hover:shadow-md hover:transition hover:cursor-pointer select-none max-h-[420px]">
+          <div key={index} className="card">
             <div>
               <img src={card.src} alt={card.title} className='' />
             </div>
 
-            <div className='p-3 flex flex-grow flex-col place-content-between content-between justify-between gap-3'>
-              <h3 className='text-xl font-bold select-auto'>{card.title}</h3>
+            <div className=''>
+              <h3 className=''>{card.title}</h3>
               {/* taglist */}
-              <ul className='flex space-x-1'>
+              <ul className=''>
                 {card.tags.map((selected) => {
                   const keyVal = `${card.title}-tag${selected.id}`
                   return (
                     <li
-                      className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold p-2 rounded-2xl max-h-6 flex text-center items-center place-content-center content-center justify-items-center text-[1vw]'
+                      className=''
                       key={keyVal}
                     >
                       {selected.tag}
