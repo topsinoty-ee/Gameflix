@@ -22,7 +22,8 @@ function App() {
         search={handleSearch}
         value={searchTerm}
       />
-      <div className="">
+
+      <div className="w-full p-6 flex flex-row flex-wrap gap-4">
         {filteredCards.map((card, index) => (
           <div key={index} className="card">
             <div>

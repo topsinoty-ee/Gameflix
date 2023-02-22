@@ -5,3 +5,13 @@
 ::-webkit-scrollbar {
   width: 0;
 }
+
+@layer components {
+  .card {
+    @apply min-w-[18rem]
+    max-w-[40rem]
+    flex
+    flex-col
+    w-[25%];
+  }
+}
