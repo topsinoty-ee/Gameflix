@@ -35,11 +35,10 @@ function App() {
               {/* taglist */}
               <ul className=''>
                 {card.tags.map((selected) => {
-                  const keyVal = `${card.title}-tag${selected.id}`
                   return (
                     <li
                       className=''
-                      key={keyVal}
+                      key={`${card.title}-tag${selected.id}`}
                     >
                       {selected.tag}
                     </li>

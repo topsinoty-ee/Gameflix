@@ -4,7 +4,7 @@ const Card = (props) => {
     let array = props.src
     return array.map((card) => {
 
-      return (
+      
         // DO NOT CHANGE OR MODIFY 'card'. IT IS AN ESSENTIAL HOOK FOR THE FILTER
         <div className="card flex flex-col shadow-black shadow-sm rounded-sm hover:shadow-black hover:shadow-md hover:transition hover:cursor-pointer select-none max-h-[420px]">
           <div>
@@ -29,7 +29,7 @@ const Card = (props) => {
             </ul>
           </div>
         </div>
-      )
+      
     })
   }
   export default Card
