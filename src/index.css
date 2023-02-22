@@ -1,7 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 10em;
+    margin: 0px;
+    border-right: 3px solid rgba(27, 26, 26, 0.877);
+    font-size: 180%;
+     position:relative;
+    left: 90px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    transform: translateY(-50%); 
+    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 10em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+/*Page Background */
+html,body {
+    background-image: url("bg2.jpeg");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+  }
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 6px;
+  overflow: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.card{
+  border-radius: 25px;
+  border: 2px solid rgba(85, 81, 81, 0.658);
+  padding: 20px; 
+  opacity: 5;
+
+}
+
+.tag {
+	flex-wrap: wrap;
+}
+
+
+
+
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-::-webkit-scrollbar {
-  width: 0;
-}
+@tailwind utilities

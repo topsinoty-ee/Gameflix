@@ -1,6 +1,6 @@
 import React from 'react'
 import array from './Data_Array'
-import {ReactComponent as Logo} from '../Assets/Logo-text.svg'
+
 
 const Navbar = () => {
   function Search() {
@@ -41,7 +41,7 @@ const Navbar = () => {
   }
   return (
     <header className='h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2'>
-    <Logo/>
+<h1 class="line-1 anim-typewriter">Welcome to GameFlix</h1>
       <input
         placeholder="Search for games..."
         type="text"
@@ -56,3 +56,4 @@ const Navbar = () => {
   )
 }
 export default Navbar
+
