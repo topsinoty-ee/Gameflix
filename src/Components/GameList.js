@@ -6,7 +6,7 @@ import Card from './Card'
 const GameList = ({data}) => {
   
   return (
-    <div className="grid grid-cols-4 p-px gap-3  overflow-scroll" id="list">
+    <div id="list">
       <Card src={data}/>
     </div>
   )

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import GameList from './Components/GameList'
 import gameList from './Components/GameMockData'
 import Navbar from './Components/Navbar'
 
@@ -14,30 +13,27 @@ function App() {
     card.title.toLowerCase().includes(searchTerm.toLowerCase()),
   )
 
-
-
   return (
-    <div className="">
+    <div>
       <Navbar
         search={handleSearch}
         value={searchTerm}
       />
 
-      <div className="w-full p-6 flex flex-row flex-wrap gap-4">
+      <div>
         {filteredCards.map((card, index) => (
           <div key={index} className="card">
             <div>
-              <img src={card.src} alt={card.title} className='' />
+              <img src={card.src} alt={card.title}  />
             </div>
 
-            <div className=''>
-              <h3 className=''>{card.title}</h3>
+            <div>
+              <h3>{card.title}</h3>
               {/* taglist */}
-              <ul className=''>
+              <ul>
                 {card.tags.map((selected) => {
                   return (
                     <li
-                      className=''
                       key={`${card.title}-tag${selected.id}`}
                     >
                       {selected.tag}
