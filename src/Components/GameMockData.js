@@ -30,8 +30,7 @@ const gameList = [
     ],
   },
   {
-    src:
-      'https://www.mobygames.com/images/covers/l/601919-call-of-duty-modern-warfare-playstation-4-front-cover.png',
+    src: 'https://m.media-amazon.com/images/I/91p-qsaE-WL.jpg',
     title: 'Call of Duty 4: Modern Warfare',
     tags: [
       { tag: 'Survival', id: 1 },
@@ -41,7 +40,7 @@ const gameList = [
   },
   {
     src:
-      'https://www.mobygames.com/images/covers/l/497224-super-mario-64-wii-u-front-cover.jpg',
+      'https://i.pinimg.com/originals/c4/65/7b/c4657be2b28a02cac60512ad2a746077.jpg',
     title: 'Super Mario 64',
     tags: [
       { tag: 'Platform', id: 1 },
@@ -69,8 +68,7 @@ const gameList = [
     ],
   },
   {
-    src:
-      'https://www.mobygames.com/images/covers/l/487051-fortnite-battle-royale-nintendo-switch-front-cover.jpg',
+    src: 'https://d1x7zurbps6occ.cloudfront.net/product/xlarge/1053948-314809.jpg',
     title: 'Fortnite',
     tags: [
       { tag: 'Battle Royale', id: 1 },
