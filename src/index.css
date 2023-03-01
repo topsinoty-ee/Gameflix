@@ -41,7 +41,7 @@
 /*Page Background */
 html,
 body {
-  background-image: url("bg2.jpeg");
+  background-image: url("./Assets/bg2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
