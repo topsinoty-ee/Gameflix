@@ -1,4 +1,4 @@
-const array = [
+const gameList = [
   {
     src:
       'https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png',
@@ -119,4 +119,4 @@ const array = [
     ],
   },
 ]
-export default array
+export default gameList

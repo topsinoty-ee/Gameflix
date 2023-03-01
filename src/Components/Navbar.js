@@ -1,57 +1,17 @@
 import React from 'react'
-import array from './Data_Array'
 
 
-const Navbar = () => {
-  function Search() {
-    var input, filter, list, card, title, i, txtValue
-    input = document.getElementById('input')
-    filter = input.value.toUpperCase()
-    list = document.getElementById('list')
-    card = list.getElementsByClassName('card')
-
-    for (i = 0; i < card.length; i++) {
-      title = card[i].getElementsByTagName('h3')[0]
-      txtValue = title.textContent || title.innerText
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        card[i].style.display = ''
-      } else {
-        card[i].style.display = 'none'
-      }
-    }
-  }
-
-  const DataList = () => {
-    const DATALIST = []
-
-    let index = 0
-    for (index; index < array.length; index++) {
-      const card = array[index].title
-      // eslint-disable-next-line no-unused-vars
-      const push = DATALIST.push(card)
-    }
-    DATALIST.sort()
-    return (
-      <datalist id="Gamelist">
-        {DATALIST.map((item) => (
-          <option key={item}>{item}</option>
-        ))}
-      </datalist>
-    )
-  }
+const Navbar = ({ value, search }) => {
   return (
     <header className='h-[10vh] bg-slate-700 flex align-center justify-between items-center px-5 py-2'>
-<h1 class="line-1 anim-typewriter">Welcome to GameFlix</h1>
+      <h1 className="line-1 anim-typewriter">Welcome to GameFlix</h1>
       <input
-        placeholder="Search for games..."
         type="text"
-        autoComplete="on"
-        list="Gamelist"
-        id="input"
-        onKeyDown={Search}
+        placeholder="Search for games..."
+        value={value}
+        onChange={search}
         className="p-2 rounded-md"
       />
-      <DataList />
     </header>
   )
 }
