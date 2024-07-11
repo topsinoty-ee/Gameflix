@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import GameList from './Components/GameList'
-import gameList from './Components/GameMockData'
+import React,{useState} from 'react'
+import './index.css'
 import Navbar from './Components/Navbar'
+import Card from './Components/Card'
+import gameList from './Components/GameMockData'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -14,41 +15,18 @@ function App() {
     card.title.toLowerCase().includes(searchTerm.toLowerCase()),
   )
 
-
-
   return (
-    <div className="">
+    <div className='flex flex-col max-h-[100vh] bg-metal overflow-hidden m-0'>
       <Navbar
         search={handleSearch}
         value={searchTerm}
       />
-
-      <div className="w-full p-6 flex flex-row flex-wrap gap-4">
-        {filteredCards.map((card, index) => (
-          <div key={index} className="card">
-            <div>
-              <img src={card.src} alt={card.title} className='' />
-            </div>
-
-            <div className=''>
-              <h3 className=''>{card.title}</h3>
-              {/* taglist */}
-              <ul className=''>
-                {card.tags.map((selected) => {
-                  return (
-                    <li
-                      className=''
-                      key={`${card.title}-tag${selected.id}`}
-                    >
-                      {selected.tag}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          </div>
-        ))}
-
+      <div className='flex h-[85vh] rounded-xl  m-5'>
+        <div className="grid grid-cols-4 p-px gap-3  overflow-scroll" id="list">
+          {filteredCards.map((card, index) => (
+            <Card card={card} index={index} />
+          ))}
+        </div>
       </div>
     </div>
   )
